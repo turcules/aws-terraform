@@ -8,7 +8,7 @@ sudo apt update -y && sudo apt install yarn -y
 cd /home/ubuntu/skillbox-deploy-blue-green/
 sudo apt install nodejs -y
 sudo apt install npm -y
-npm install
+yarn install
 # We can get the IP address of instance
 myip=`curl http://169.254.169.254/latest/meta-data/local-ipv4`
 export PORT=80
