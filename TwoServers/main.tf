@@ -56,7 +56,7 @@ resource "aws_launch_configuration" "web" {
   security_groups = [aws_security_group.web.id]
   # какие следует запустить скрипты при создании сервера
   user_data       = file("user_data.sh")
-  iam_instance_profile = "AmazonEC2RoleForSSM"
+  #iam_instance_profile = "AmazonEC2RoleForSSM"
   # какой SSH ключ будет использоваться 
   key_name = "id_rsa"
   # Если мы решим обновить инстанс, то, прежде, чем удалится старый инстанс, который больше не нужен, должен запуститься новый
